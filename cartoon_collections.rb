@@ -8,7 +8,6 @@ def summon_captain_planet(planeteer_calls)
   
   array.collect{|call|
     p "#{call.capitalize}!"
-    
   }
 end
 
