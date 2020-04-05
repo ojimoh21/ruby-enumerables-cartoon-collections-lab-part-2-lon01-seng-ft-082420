@@ -3,9 +3,6 @@ def square_array(array)
 end
 
 def summon_captain_planet(planeteer_calls)
-  # Use an Enumerable to capitalize and add '!' to every element in the passed in array
-  # Return a new array of the results
-  
   planeteer_calls.collect{|call|
     p "#{call.capitalize}!"
   }
@@ -14,6 +11,11 @@ end
 def long_planeteer_calls(planeteer_calls)
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
   # Return the boolean result of this check
+  
+  planeteer_calls.any? {|call|
+    call.length > 4 
+    return true 
+  }
 end
 
 def find_valid_calls(planeteer_calls)
