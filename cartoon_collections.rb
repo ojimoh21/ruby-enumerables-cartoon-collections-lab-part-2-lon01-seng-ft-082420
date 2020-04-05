@@ -22,5 +22,5 @@ def find_valid_calls(planeteer_calls)
   planeteer_calls.find { |call| 
     call == valid_calls
   }
-  
+  call
 end
